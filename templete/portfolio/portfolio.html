@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="port.css">
+
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div id="page">
+        <header>
+
+            <div id="top_menu">
+
+                <a href="#">로그인</a> |
+                <a href="#">회원가입</a>
+
+
+            </div>
+            <nav>
+                <ul>
+
+                    <li><a class="test11" id="atest1" href="#">땅삽니다</a></li>
+                    <li><a class="test12" id="atest2" href="#">땅팝니다</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <article id="content">
+            <section id="main">
+                <img src="전원주택.jpg" style="width: 97%; height:auto">
+
+            </section>
+            <div id="search">
+                <input type="text" placeholder="주소로 검색하기">
+                <button>검색</button>
+            </div>
+
+        </article>
+
+
+        <footer>
+          <h2>상담문의 010-5129-5285</h2>
+          <h4>서울시 강남구 역삼동 111번지</h4>
+        </footer>
+
+    </div>
+    <script>
+
+    var evt1=0;
+
+    $('#atest1').hover(function(event){
+        $('#atest1').css('background-color', '#dddddd')
+    }, function(){
+        $(this).css('background-color', '#2d3a4b')
+    });
+    $('#atest2').hover(function(event){
+        $('#atest2').css('background-color', '#dddddd')
+    }, function(){
+        $(this).css('background-color', '#2d3a4b')
+    });
+    </script>
+</body>
+</html>
